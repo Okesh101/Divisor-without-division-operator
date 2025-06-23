@@ -22,6 +22,9 @@ while (True):
     choice = str(input("\nDo you want to divide again? "))
     if (choice.casefold() == "yes" or choice.casefold() == "y"):
         continue
+    elif (choice.casefold() == "no" or choice.casefold() == "n"):
+        print("\nThank you for dividing! \nExiting the divisor.")
+        break
     else:
-        print("\nThank you for dividing!")
+        print("Wrong Input!")
         break
