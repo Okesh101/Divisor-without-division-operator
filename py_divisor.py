@@ -2,8 +2,8 @@ print("Welcome to the divisor.")
 
 while (True):
     try:
-        bigNum = int(input("Enter big number: "))
-        smallNum = int(input("Enter small number: "))
+        bigNum = float(input("Enter big number: "))
+        smallNum = float(input("Enter small number: "))
 
         count = 1
         if (bigNum >= smallNum):
@@ -18,7 +18,7 @@ while (True):
     except ValueError:
         print("Wrong Input!")
         break
-
+  
     choice = str(input("\nDo you want to divide again? "))
     if (choice.casefold() == "yes" or choice.casefold() == "y"):
         continue
